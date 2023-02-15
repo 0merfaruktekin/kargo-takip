@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block head %}
+
+{% endblock %}
+{% block body %}
+<div style="margin: auto;
+width: 50%;
+padding: 10px;">
+<form action="/musteri" method="POST">
+    <h1>Müşteri Giriş</h1>
+    <input type="text" placeholder="id giriniz" name="musteri_id" id="musteri_id"><br>
+    <input type="password" name="musteri_pass" id="musteri_pass" placeholder="Şifre Giriniz"><br>
+    <input type="submit" value="Giriş"><br>
+    <a href="/">Ana Sayfaya Dön</a>
+</form>
+</div>
+{% endblock %}

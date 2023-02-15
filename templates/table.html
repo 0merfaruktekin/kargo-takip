@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block head %}
+{% endblock %}
+{% block body %}
+<div style="margin: auto;
+width: 50%;
+padding: 10px;">
+<a href="/">Ana Sayfaya Dön</a>
+    <table>
+        <tr>
+            <th>Gönderen</th>
+            <th>Durum</th>
+            <th>Alıcı</th>
+         </tr>
+        <tr>
+            <td>{{ veriler[0][1] }}</td>
+            <td>{{veriler[0][2]}}</td>
+            <td>{{veriler[0][3]}}</td>
+        </tr>
+    </table>
+</div>
+{% endblock %}

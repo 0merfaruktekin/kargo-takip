@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block head %}
+{% endblock %}
+{% block body %}
+<div style="margin: auto;
+width: 50%;
+padding: 10px;">
+    <table>
+        <tr>
+            <th>İD</th>
+            <th>Gönderen</th>
+            <th>Durum</th>
+            <th>Alıcı</th>
+            <th>Şube</th>
+         </tr>
+         {% for veri in veriler%}
+            <tr>
+                <td>{{ veri[0] }}</td>
+                <td>{{ veri[1] }}</td>
+                <td>{{ veri[2] }}</td>
+                <td>{{ veri[3] }}</td>
+                <td>{{ veri[4] }}</td>
+                <td><a href="/kurye/{{veri[5]}}">Teslim Et</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+<a href="/">Ana Sayfaya Dön</a>
+</div>
+{% endblock %}

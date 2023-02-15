@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block head %}
+
+{% endblock %}
+{% block body %}
+<div style="margin: auto;
+width: 50%;
+padding: 10px;" >
+  <header>
+    <a href="/musteri">Müşteri Giriş</a>
+    <a href="/kurye">Kurye Giriş</a>
+    <a href="yonetici">Yönetici Giriş</a>
+  </header>
+  <h1>Kargo Takip</h1>
+  <form action="/" method="POST">
+    <input type="text" name="id" id="id" placeholder="id giriniz"><br>
+    <input type="submit" value="Sorgula">
+  </form>
+</div>
+{% endblock %}

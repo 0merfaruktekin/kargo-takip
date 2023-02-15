@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block head %}
+
+{% endblock %}
+{% block body %}
+<div style="margin: auto;
+width: 50%;
+padding: 10px;">
+<h1>Yeni Kayıt Ekle</h1>
+<form action="/yonetici/{{ sube }}" method="POST">
+    <input type="text" placeholder="musteri id giriniz" name="musteri_id" id="musteri_id"><br>
+    <input type="text" name="alici" id="alici" placeholder="alıcı giriniz"><br>
+    <input type="text"  placeholder="kurye id giriniz"  name="kurye_id" id="kurye_id"><br>
+    <input type="submit" value="ekle">
+</form>
+</div>
+{%endblock%}
